@@ -5,9 +5,9 @@ const MainComponent = () => {
     return (
         <>
             <main className='main-component'>
-                <div style={{paddingLeft:'1000px'}}>
+                <div>
                 {links.map((link, index) => (
-                    <div className={`link link-${index}`}>
+                    <div className={`link link-${index} link-aaa`} style={{top:`${index*23}px`}}>
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             {link}
                         </a>
